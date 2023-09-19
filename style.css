@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 200px;
+    background-color: black;
+    height: 400px;
+}
+.left img{
+    width: 200px;
+   margin-top: 30%;
+   border: 4px solid black;
+    
+    
+}
+.right{
+    width: 250px;
+    background-color: whitesmoke;
+    height: 400px;
+    padding: 20px;
+}
+.right p{
+    color: grey;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.right h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.right h3{
+    color: green;
+    font-weight: bolder;
+    font-size: medium;
+    margin-top: 10px;
+}
+.right .size-select{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+   
+}
+.right form{
+    font-size: 16px;
+    font-weight: 500;
+}
+.size-select  p{
+    margin-bottom: 12px;
+    margin-right: 20px;
+    color: black;
+
+}
+.size-select input:checked + span{
+    color: blue;
+    font-weight: 600;
+
+}
+.size-select input{
+    display: none;
+}
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.color-select p{
+    width: 50px;
+    color: black;
+    margin-bottom: 13px;
+}
+.color-select span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.red{
+    background: red;
+}
+.green{
+    background: green;
+}
+.blue{
+    background: blue;
+}
+.color-select input{
+    display: none;
+}
+.color-select input:checked+span{
+    transform: translate(0.8);
+    box-shadow: 0 0 0 4px white,0 0 0 6px black;
+}
+.quantity{
+    display: flex;
+    margin-top: 10px;
+}
+.quantity p{
+    color: black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.quantity input{
+    background: #eee;
+    border: none;
+    outline: none;
+    padding: 2px 2px 2px 15px;
+    width: 60px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+form button{
+    width: 80%;
+    height: 40px;
+    background:linear-gradient(60deg,red,brown);
+    border: none;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+@media (max-width:410px) {
+    .container{
+        flex-direction: column;
+        padding: 70px;
+        
+    }
+    .left{
+        background: white;
+        margin-bottom: -3px;
+       
+        width: 250px;
+    }
+    .left img{
+        margin-left: 25px;
+    }
+    
+}
